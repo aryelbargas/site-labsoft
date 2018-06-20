@@ -1,0 +1,470 @@
+/* Corpo */
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Glegoo', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    letter-spacing: -.02rem;
+}
+
+*,
+*:focus {
+    outline: none !important;
+}
+
+a {
+    color: #2d2d2d;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: #0984e3;
+    text-decoration: none;
+}
+
+/* Classes */
+.hiding {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
+
+.img-rounded {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.btn-blue {
+    color: #fff;
+    background: #227fe8;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    color: #fff;
+    background: #143aa3;
+}
+
+.btn-green {
+    color: #fff;
+    background: #afd920;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    color: #fff;
+    background: #143aa3;
+}
+
+.btn-dark {
+    color: #fff;
+    background: #143aa3;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    color: #fff;
+    background: #143aa3;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.loader {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin: -2rem 0 0 -2rem;
+    text-indent: -9999rem;
+    border-radius: 50%;
+    background: #143aa3;
+    background: -moz-linear-gradient(left, #143aa3 10%, rgba(35,59,111, 0) 42%);
+    background: -webkit-linear-gradient(left, #143aa3 10%, rgba(35,59,111, 0) 42%);
+    background: -o-linear-gradient(left, #143aa3 10%, rgba(35,59,111, 0) 42%);
+    background: -ms-linear-gradient(left, #143aa3 10%, rgba(35,59,111, 0) 42%);
+    background: linear-gradient(to right, #143aa3 10%, rgba(35,59,111, 0) 42%);
+    -webkit-animation: loading 1s infinite linear;
+    animation: loading 1s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.loading:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    content: "";
+    background: #143aa3;
+    border-radius: 100% 0 0 0;
+}
+
+.loading:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 94%;
+    height: 94%;
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+}
+
+.navbar-light {
+    margin-bottom: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+}
+
+.navbar-light .navbar-brand {
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link:focus {
+    color: #0984e3;
+    background: transparent;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    border-bottom-color: transparent;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+}
+
+.page .content {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.page .content.cover {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.page .border {
+    width: 6rem;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #0984e3;
+}
+
+.page.overlay:after {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.page.overlay .content {
+    position: relative;
+    z-index: 1;
+}
+/* Fim Classes */
+
+/* Id */
+/* Home */
+#home {
+    padding: 3;
+    position: relative;
+    background-size: cover;
+    max-height: 800px;
+    width: auto;
+}
+
+#home h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+/* Serviços */
+#servicos {
+    background: #f5f5f5;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#servicos .service i {
+    margin-top: 4rem;
+}
+
+#servicos .service:hover i {
+    color: #0984e3;
+}
+
+/* Portfolio */
+#port-labsoft .content {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#port-labsoft .teammate {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#port-labsoft .teammate .profile-photo {
+    overflow: hidden;
+}
+
+#port-labsoft .teammate .profile-photo img {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#port-labsoft .teammate:hover .profile-photo img,
+#port-labsoft .teammate:focus .profile-photo img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#port-labsoft .teammate .bio .border {
+    height: 1px;
+}
+
+#port-labsoft .teammate .bio ul {
+    margin-bottom: 0;
+}
+
+#port-labsoft .teammate .bio a {
+    color: #666;
+}
+
+#port-labsoft .teammate .bio a:hover,
+#port-labsoft .teammate .bio a:focus {
+    color: #222;
+}
+
+/* Equipe */
+#equipe .content {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#equipe .teammate {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#equipe .teammate .profile-photo {
+    overflow: hidden;
+}
+
+#equipe .teammate .profile-photo img {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#equipe .teammate:hover .profile-photo img,
+#equipe .teammate:focus .profile-photo img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#equipe .teammate .bio .border {
+    height: 1px;
+}
+
+#equipe .teammate .bio ul {
+    margin-bottom: 0;
+}
+
+#equipe .teammate .bio a {
+    color: #666;
+}
+
+#equipe .teammate .bio a:hover,
+#equipe .teammate .bio a:focus {
+    color: #222;
+}
+
+/* Rodapé - Contato */
+#footer {
+    padding: 4rem 0;
+    text-align: center;
+    color: #0984e3;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: white;
+}
+
+#footer .service i {
+    margin-top: 4rem;
+}
+
+#footer .service:hover i {
+    color: #0984e3;
+}
+
+#footer a,
+#footer a:hover,
+#footer a:focus {
+    color: #0984e3;
+}
+
+#footer .border{
+  width: 6rem;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #0984e3;
+}
+/* Fim Id */
+
+.work .title {
+    color: #222;
+}
+
+
+/* Venobox */
+
+.vbox-container {
+    overflow: hidden;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Responsive style */
+
+@media (min-width: 576px) {
+    .page .content.cover {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+    }
+    #portfolio .items li {
+        width: 50%;
+    }
+    #testimonials .quote {
+        padding: 0 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .page .content.cover {
+        margin-top: 16rem;
+        margin-bottom: 16rem;
+    }
+    #portfolio .items li {
+        width: 25%;
+    }
+    #testimonials .quote {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .page .content.cover {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #testimonials .quote {
+        padding: 0 12rem;
+    }
+}
